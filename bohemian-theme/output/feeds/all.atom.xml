@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Bohemian</title><link href="localhost/bohemian-theme/" rel="alternate"></link><link href="localhost/bohemian-theme/feeds/all.atom.xml" rel="self"></link><id>localhost/bohemian-theme/</id><updated>2014-03-05T18:18:42+01:00</updated><entry><title>Bohemian’s Typography</title><link href="localhost/bohemian-theme/bohemians-typography.html" rel="alternate"></link><updated>2014-03-05T18:18:42+01:00</updated><author><name>Omphalosskeptic</name></author><id>tag:localhost/bohemian-theme,2014-03-05:bohemians-typography.html</id><summary type="html">&lt;p&gt;Handsome headers typeset in Alegreya SC:&lt;/p&gt;
+&lt;h1&gt;Header Level One&lt;/h1&gt;
+&lt;h2&gt;Header Level Two&lt;/h2&gt;
+&lt;h3&gt;Header Level Three&lt;/h3&gt;
+&lt;h4&gt;Header Level Four&lt;/h4&gt;
+&lt;h5&gt;Header Level Five&lt;/h5&gt;
+&lt;h6&gt;Header Level Six&lt;/h6&gt;
+&lt;h3&gt;Paragraphs&lt;/h3&gt;
+&lt;p&gt;A paragraph is one or more lines of text followed by one or more blank line. Newlines are treated as spaces. If you need a hard line break, put two or more spaces at the end of a line, or type a backslash at the end of a line.&lt;/p&gt;
+&lt;h3&gt;Block quotations&lt;/h3&gt;
+&lt;p&gt;Block quotations in markdown use the same convention as in emails. A generic block quote looks like this: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a block quote — a long and presumably witty quote that happened to agree with whatever point your were trying to make.
+— &lt;strong&gt;Vaguely Famous Person&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Code blocks&lt;/h3&gt;
+&lt;p&gt;Bohemian supports syntax-highlighting for codeblocks and &lt;em&gt;pre&lt;/em&gt; elements with Pygments.css:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;helloWorld&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello world&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can use &lt;/p&gt;
+&lt;h3&gt;Lists&lt;/h3&gt;
+&lt;h4&gt;Bullet List:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;one&lt;/li&gt;
+&lt;li&gt;two&lt;/li&gt;
+&lt;li&gt;three&lt;br /&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Numbered Lists:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;br /&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Inline formatting&lt;/h3&gt;
+&lt;p&gt;Emphasizing some text is done by surrounding it with *s:&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;emphasized with asterisks&lt;/em&gt;, and this will be a &lt;strong&gt;bold text&lt;/strong&gt;. And even more &lt;strong&gt;&lt;em&gt;krass&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Horizontal Rules&lt;/h3&gt;
+&lt;p&gt;Horizontal rules are easily created by putting three or more &lt;code&gt;***&lt;/code&gt; or &lt;code&gt;---&lt;/code&gt; on a line:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Super- and subscripts&lt;/h3&gt;
+&lt;p&gt;Superscripts may be written by surrounding the superscripted text by ^ characters; subscripts may be written by surrounding the subscripted text by ~ characters. Thus, for example,&lt;/p&gt;
+&lt;p&gt;H~2~O is a liquid.  2^10^ is 1024.&lt;/p&gt;
+&lt;h3&gt;Links&lt;/h3&gt;
+&lt;p&gt;Using the normal markdown syntax: &lt;code&gt;[Text](http://example.com/url)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This is an &lt;a href="/url"&gt;inline link&lt;/a&gt;, and here's &lt;a href="http://fsf.org" title="click here for a good time!"&gt;one with
+a title&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If the link is to a common site (like &lt;a href="http://github.com/omphalosskeptic"&gt;Github&lt;/a&gt;, or &lt;a href="http://stackoverflow.com"&gt;Stackoverflow&lt;/a&gt; ), Bohemian will perpend the site’s icon.&lt;/p&gt;
+&lt;h3&gt;Images&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Example Image" src="images/omphalosskeptic.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Using the normal markdown image syntax: 
+&lt;code&gt;![Example Image](path/to/image.png)&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>Example Blog post</title><link href="localhost/bohemian-theme/example-blog-post.html" rel="alternate"></link><updated>2014-03-05T18:18:25+01:00</updated><author><name>Omphalosskeptic</name></author><id>tag:localhost/bohemian-theme,2014-03-05:example-blog-post.html</id><summary type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, tenetur sunt fugiat iste tempore dolores dignissimos perspiciatis facilis impedit sapiente delectus tempora accusantium dolorum odio!&lt;/p&gt;
+&lt;h3&gt;Header&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, excepturi, architecto, dignissimos, nobis assumenda qui delectus sint consequuntur tempora sit et porro quos vel aliquid tenetur fuga blanditiis iure! Cumque ut inventore adipisci maiores aspernatur ea tempora minima dolores facilis assumenda! Hic, sequi, excepturi, a est ut expedita porro provident corporis consectetur nulla doloremque cum nesciunt sit nobis officiis iure fugiat recusandae tenetur aut rerum odit optio quos distinctio. Quibusdam vero eaque maxime dolore vitae doloremque quae dolores. Dignissimos, at harum vitae ad itaque laborum. Cum, corrupti iste et totam dolore consequatur corporis dolorem quisquam error eum iusto soluta repellat!&lt;/p&gt;</summary></entry></feed>
