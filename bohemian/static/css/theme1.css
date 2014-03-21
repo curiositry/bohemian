@@ -1,0 +1,77 @@
+body{
+  font-family: 'Alegreya', Alegreya, Calendas Plus, sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family:'Alegreya SC', Alegreya SC, Roboto Black, Roboto;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: brown;
+}
+
+h1,h2,.h1,.h2{
+  text-shadow: 2px 2px 0 moccasin;
+}
+
+blockquote p{
+  border-left: 4px solid moccasin;
+}
+
+code, pre{
+  background-color: moccasin;
+}
+
+.amp{
+  font-family:'Alegreya SC', Alegreya SC, Helvetica;
+}
+
+.siteheader__sitesubtitle{
+  font-family: Hagin Caps Thin, 'Alegreya SC', Alegreya SC, Helvetica;
+}
+
+.menu{
+  margin-top: 1em;
+}
+
+.menu__item a{
+  border-top: 3px double moccasin;
+  border-bottom: none;
+  font-family: Hagin Caps Thin, Roboto Black, Roboto, Helvetica;
+  letter-spacing: .15em;
+  font-weight: 900;
+  text-transform: uppercase;
+
+}
+
+.menu__item a:hover, .menu__item--active a{
+  background-color: #fefeee;
+}
+
+.menu__list:last-child{
+  border-bottom: 3px double moccasin;
+}
+
+
+
+
+@media all and (min-width: 800px) and (min-device-width : 480px){
+  
+  .menu__item a{
+    border-top: 0;
+  }
+
+  .menu__item a:before{
+    content: "/ ";
+  }
+
+  .menu__item a:hover, .menu__item--active a{
+    background-color: #fff;
+    border-bottom: 5px solid moccasin;
+  }
+
+  .menu__list:last-child{
+    border-bottom: 0;
+  }
+}
