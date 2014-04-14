@@ -1,12 +1,6 @@
 body{
-  font-family: Alegreya, Calendas Plus, serif;
-}
+  font-family: 'Alegreya', Alegreya, Calendas Plus, sans-serif;
 
-.container--menu{
-  max-width: 960px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -16,12 +10,12 @@ h1, h2, h3, h4, h5, h6,
   text-transform: lowercase;
   font-variant: small-caps;
 
-  /*-moz-font-feature-settings:"c2sc";
+  -moz-font-feature-settings:"c2sc";
   -moz-font-feature-settings:"c2sc=1";
   -ms-font-feature-settings:"c2sc";
   -o-font-feature-settings:"c2sc";
   -webkit-font-feature-settings:"c2sc";
-  font-feature-settings:"c2sc";*/
+  font-feature-settings:"c2sc";
 
   color: brown;
 }
@@ -38,7 +32,9 @@ code, pre{
   background-color: moccasin;
 }
 
+.amp{
 
+}
 
 .siteheader__sitesubtitle{
   font-family: Hagin Caps Thin, 'Alegreya', Alegreya, Helvetica;
@@ -52,10 +48,6 @@ code, pre{
   -o-font-feature-settings:"c2sc";
   -webkit-font-feature-settings:"c2sc";
   font-feature-settings:"c2sc";
-}
-
-.siteheader__logo{
-  height: 150px;
 }
 
 .menu{
@@ -76,9 +68,10 @@ code, pre{
   -webkit-font-feature-settings:"c2sc";
   font-feature-settings:"c2sc";
 
-  font-weight: 700;
+  letter-spacing: .15em;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: .1em;
+
 }
 
 .menu__item a:hover, .menu__item--active a{
@@ -88,76 +81,11 @@ code, pre{
 .menu__list:last-child{
   border-bottom: 3px double moccasin;
 }
-.footer__attribution{
-  font-style: italic;
-  color:#999;
-}
 
 
 
 
 @media all and (min-width: 800px) and (min-device-width : 480px){
-
-  .github_ribbon{
-    display: block;
-  }
-
-  .divider{
-    margin: 10px 0;
-    background-color: #fff;
-    height: 0px;
-    border-bottom: 1px dotted #eee;
-    border-top: 1px dotted #eee;
-  }
-
-  html{
-    font-size: 125%;
-  }
-
-  body{
-    font-size:24px;
-  }
-
-
-  .siteheader{
-    display: block;
-    float:left;
-    text-align: right;
-    height:70px;
-  }
-  
-  .siteheader__sitename,
-  .siteheader__sitesubtitle{
-    position:relative;
-    top:7px;
-  }
-
-  .siteheader__logo{
-    max-height:60px;
-    position:relative;
-    top:10px;
-  }
-
-  .menu{
-    float:right;
-    width: auto;
-  }
-
-  .menu__item{
-    display: inline-block;
-    margin-left: 20px;
-
-    background-color: #fff;
-    border-top: 0;
-  }
-
-  .menu__item a{
-    background-color: rgba(255,255,255,0);
-    padding: 0px 0px;
-    margin: 0px;
-    border-top: 0;
-  }
-
   
   .menu__item a{
     border-top: 0;

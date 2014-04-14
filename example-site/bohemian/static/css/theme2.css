@@ -1,0 +1,87 @@
+body{
+  font-family: Linux Libertine, Linux Libertine O, EB Garamond, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: Linux Libertine, Linux Libertine O, Noto Serif, sans-serif;
+  
+  -moz-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
+  -ms-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
+  -o-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
+  -webkit-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
+  font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
+
+  color: #444;
+  font-weight: 900;
+}
+
+h1, h2{
+  text-shadow: 2px 2px 0 #ccc;
+}
+
+blockquote p{
+  border-left: 4px solid moccasin;
+}
+
+code, pre{
+  background-color: moccasin;
+}
+
+
+.siteheader__sitesubtitle{
+  font-weight: 200;
+  text-transform: lowercase;
+  font-size: 1.7em;
+}
+
+.menu{
+  margin-top: 1em;
+
+}
+
+.menu__item a{
+  font-family: Helvetica;
+  border-top: 3px double moccasin;
+  border-bottom: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .03em;
+  width: 100%;
+
+}
+.menu__item a:hover, .menu__item--active a{
+  background-color: #fefeee;
+}
+
+.menu__list:last-child{
+  border-bottom: 3px double moccasin;
+}
+
+/*.social*/ a[href*='github.com'],
+    /*a[href*='github.io'],*/
+    a[href*='git.io'] {background-repeat: no-repeat;background-position: 0em 0em;padding-left: 25px;background-image: url('../images/icons/github.png');}
+
+
+
+
+@media all and (min-width: 800px) and (min-device-width : 480px){
+  
+  .menu__item a{
+    border-top: 0;
+    font-size: 1em;
+  }
+
+  .menu__item a:before{
+    content: "/ ";
+  }
+
+  .menu__item a:hover, .menu__item--active a{
+    background-color: #fff;
+    border-bottom: 5px solid moccasin;
+  }
+
+  .menu__list:last-child{
+    border-bottom: 0;
+  }
+}
