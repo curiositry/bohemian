@@ -3,20 +3,25 @@
 <head>
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
     <meta charset="utf-8" />
+    
+    {% if META_DESCRITPION %}
+      <meta name="description" content="{{ META_DESCRIPTION }}">
+    {% endif %}
     
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
-
+    
+    <!-- Base stylesheet -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
 
-   
     {% if USE_CLEAN_SUBTHEME %}
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,600,600i,700,700i">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Crimson:400,400i,600,600i,700,700i/Playfair+Display:400,400i,700,700i,900,900i">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme2.css">
     {% else %}
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Alegreya:400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Alegreya:400,700,400i,700i">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/theme1.css">
     {% endif %}
     
@@ -51,52 +56,72 @@
 </head>
 
 <body>
-  <header class="siteheader">
-      {% if SITELOGO %}
-        <a href="{{ SITEURL }}/" class="anchor--unstyled">
-          <img class="siteheader__logo" src="{{ SITELOGO }}">
-        </a>
-      {% else %}
-      <h1 class="siteheader__sitename">
-        <a href="{{ SITEURL }}/">
-          {{ SITENAME }} 
-        </a>
-      </h1>
-      {% endif %}
-  </header><!-- /.banner -->
-  <nav class="menu">
-    <ul class="menu__list">
-      {% for title, link in MENUITEMS %}
-        <li class="menu__item">
-          <a href="{{ link }}">{{ title }}</a>
-        </li>
-      {% endfor %}
-      {% if DISPLAY_PAGES_ON_MENU %}
-        {% for p in PAGES %}
-        <li} class="menu__item {% if p == page %}menu__item--active{% endif %}">
-          <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endfor %}
-      {% else %}
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-        {% for cat, null in categories %}
-          <li class="menu__item {% if cat == category %}menu__item--active{% endif %}" >
-            <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+
+  <div class="container">
+    <header class="siteheader">
+        {% if SITELOGO %}
+          <a href="{{ SITEURL }}/" class="anchor--unstyled">
+            <img class="siteheader__logo" src="{{ SITELOGO }}">
+          </a>
+        {% else %}
+        <h1 class="siteheader__sitename">
+          <a href="{{ SITEURL }}/">
+            {{ SITENAME }} 
+          </a>
+        </h1>
+        {% endif %}
+    </header><!-- /.banner -->
+  </div> <!-- END CONTAINER -->
+
+  <div class="container--menu">
+    <nav class="menu">
+      <ul class="menu__list">
+        {% for title, link in MENUITEMS %}
+          <li class="menu__item">
+            <a href="{{ link }}">{{ title }}</a>
           </li>
         {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+          <li} class="menu__item {% if p == page %}menu__item--active{% endif %}">
+            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+          </li>
+          {% endfor %}
+        {% else %}
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+          {% for cat, null in categories %}
+            <li class="menu__item {% if cat == category %}menu__item--active{% endif %}" >
+              <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+            </li>
+          {% endfor %}
+          {% endif %}
         {% endif %}
-      {% endif %}
-    </ul>
-  </nav><!-- /.menu --><br clear="all"><hr style="background-color: white; border:1px dotted #eee;"><br>
+      </ul>
+    </nav>
+  </div> <!-- END MENU-CONATINER -->
+
+  <br clear="all">
+
+
+  <div class="container">
+
+  <div class="divider"></div>
+  
+
   {% block content %}
   {% endblock %}
+  
+  <div class="divider"></div>
+
   <footer class="footer">
     <span class="footer__attribution">
-      Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-      which takes great advantage of <a href="http://python.org">Python</a>.<br>
-      <a href="http://github.com/omphalosskeptic/bohemian">Bohemian</a> theme by <a href="http://omphalosskeptic.github.io">Omphalosskeptic</a>
+        Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+        which takes great advantage of <a href="http://python.org">Python</a>.<br>
+        <a href="http://github.com/omphalosskeptic/bohemian">Bohemian</a> theme by <a href="http://omphalosskeptic.github.io">Omphalosskeptic</a>
     </span>
   </footer>
   <h2 class="siteheader__sitesubtitle">{{ SITESUBTITLE }}</h2>
+
+</div> <!-- END CONATINER --> 
 </body>
 </html>

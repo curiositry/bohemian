@@ -4,7 +4,7 @@ body{
 
 h1, h2, h3, h4, h5, h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
-  font-family: 'Playfair Display SC', Playfair Display SC, Linux Libertine, Linux Libertine O, Noto Serif, sans-serif;
+  font-family: 'Playfair Display', Playfair Display, Linux Libertine, Linux Libertine O, Noto Serif, sans-serif;
   
   -moz-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
   -ms-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6,
   font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
 
   color: #444;
-  font-weight: 400;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 700;
 }
 
 h1, h2{
@@ -41,7 +43,7 @@ code, pre{
 }
 
 .menu__item a{
-  font-family: Playfair Display SC;
+  font-family: Playfair Display;
   border-top: 2px dotted #ddd;
   border-bottom: none;
   text-transform: uppercase;
