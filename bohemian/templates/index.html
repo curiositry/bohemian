@@ -9,6 +9,11 @@
   {% for article in articles_page.object_list %}
     <li>
       <article class="content__post">
+        {% if article.coverimg %} 
+          <div class="coverimage">
+            <img src="{{ article.coverimg }}" alt="{{ article.title }} coverimage">
+          </div>
+          {% endif %}
         <header> <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
         <footer class="content__post-info">
           <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>

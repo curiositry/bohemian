@@ -1,25 +1,30 @@
 body{
+  -moz-font-feature-settings: "liga=1, dlig=1";
+ -ms-font-feature-settings: "liga", "dlig";
+ -webkit-font-feature-settings: "liga", "dlig";
+ -o-font-feature-settings: "liga", "dlig";
+ font-feature-settings: "liga", "dlig";
   font-family: Crimson, Crimson Roman, Gentium, EB Garamond, Linux Libertine, Linux Libertine O, EB Garamond, sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
   font-family: 'Playfair Display', Playfair Display, Linux Libertine, Linux Libertine O, Noto Serif, sans-serif;
-  
-  -moz-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
-  -ms-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
-  -o-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
-  -webkit-font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
-  font-feature-settings: "dlig" 1, "hlig" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "sups" 0, "subs" 0, "sinf" 0, "ordn" 0, "zero" 1, "frac" 1, "c2sc" 0, "smcp" 1, "c2pc" 0, "pcap" 0, "case" 0, "cpsp" 0, "swsh" 1, "cswh" 1, "hist" 1, "titl" 1;
-
   color: #444;
   text-transform: lowercase;
-  font-variant: small-caps;
+  -moz-font-feature-settings:"smcp";
+  -moz-font-feature-settings:"smcp=1";
+  -ms-font-feature-settings:"smcp";
+  -o-font-feature-settings:"smcp";
+  -webkit-font-feature-settings:"smcp";
+  font-feature-settings:"smcp";
   font-weight: 700;
 }
 
 h1, h2{
-  text-shadow: 2px 2px 0 #ccc;
+  font-weight: 400;
+  text-align: center;
 }
 
 blockquote p{
@@ -29,6 +34,7 @@ blockquote p{
 code, pre{
   background-color: moccasin;
 }
+
 
 .siteheader__sitesubtitle{
   font-weight: 200;
@@ -46,7 +52,13 @@ code, pre{
   font-family: Playfair Display;
   border-top: 2px dotted #ddd;
   border-bottom: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  -moz-font-feature-settings:"smcp";
+  -moz-font-feature-settings:"smcp=1";
+  -ms-font-feature-settings:"smcp";
+  -o-font-feature-settings:"smcp";
+  -webkit-font-feature-settings:"smcp";
+  font-feature-settings:"smcp";
   font-weight: 700;
   letter-spacing: .03em;
   width: 100%;
@@ -139,9 +151,12 @@ code, pre{
 
 
 .content__post-info{
-  font-style: italic;
   margin-bottom: .5em;
   color:#999;
+}
+
+.author{
+  font-style: italic;
 }
 
 .footer__attribution{
@@ -222,6 +237,7 @@ code, pre{
   
     margin: 0px;
     border-top: 0;
+    font-weight: 400;
   }
 
   .grayscale img{
@@ -232,6 +248,8 @@ code, pre{
   .coverimage{
     float:left;
     margin-right: 40px;
+    position: relative;
+    top:.6em;
     width: auto;
     display: block;
   }
